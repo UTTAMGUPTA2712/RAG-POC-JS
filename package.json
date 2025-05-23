@@ -2,11 +2,29 @@
   "name": "rag-poc",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node --trace-warnings --experimental-transform-types index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.44",
+    "@langchain/core": "^0.3.57",
+    "@langchain/google-genai": "^0.2.9",
+    "@langchain/langgraph": "^0.2.73",
+    "@langchain/openai": "^0.5.11",
+    "@langchain/textsplitters": "^0.1.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.27",
+    "zod": "^3.25.20",
+    "zod-to-json-schema": "^3.24.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21"
+  }
 }
